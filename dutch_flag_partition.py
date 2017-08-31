@@ -23,3 +23,5 @@ def dutch_flag_parition(pivot_index, A)
       else: #A[equal] > pivot
         larger -= 1
         A[equal], A[larger] = A[larger], A[equal]
+        
+        #time complexity is O(n), space complexity O(1)
