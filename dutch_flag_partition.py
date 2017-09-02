@@ -25,3 +25,20 @@ def dutch_flag_parition(pivot_index, A)
         A[equal], A[larger] = A[larger], A[equal]
         
         #time complexity is O(n), space complexity O(1)
+
+#Another approach
+def dutch_flag_partition2(pivot_index, A):
+    pivot = A[pivot_index]
+    smaller = 0
+    for i in range(len(A)):
+        if A[i] < pivot:
+            A[i], A[smaller] = A[smaller], A[i]
+            smaller += 1
+    larger = len(A) - 1
+    for i in reversed(range(len(A))):
+        if A[i] < pivot:
+            break
+        if A[i] > pivot:
+            A[larger], A[i] = A[i], A[larger]
+            
+            
