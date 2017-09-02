@@ -38,7 +38,7 @@ def dutch_flag_partition2(pivot_index, A):
     for i in reversed(range(len(A))):
         if A[i] < pivot:
             break
-        if A[i] > pivot:
+        elif A[i] > pivot:
             A[larger], A[i] = A[i], A[larger]
             larger -= 1
             
