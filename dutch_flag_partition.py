@@ -40,5 +40,5 @@ def dutch_flag_partition2(pivot_index, A):
             break
         if A[i] > pivot:
             A[larger], A[i] = A[i], A[larger]
-            
+            larger -= 1
             
