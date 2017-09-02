@@ -4,7 +4,8 @@ def plus_one(A):
     A[-1] += 1 
     for i in reversed(range(1,len(A)):
         if A[i] != 10:
-            break
+            break #if the last digit is not 10, then the new array is set
+     # otherwise, need to update the carry-on 
         A[i] = 0
         A[i - 1]  += 1
     if A[0] == 10:
