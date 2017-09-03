@@ -1,4 +1,4 @@
-#delete duplicated elements in an array
+#delete duplicated elements in a sorted array
 def delete_duplicated(A):
     if not A:
         return 0
