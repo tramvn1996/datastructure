@@ -11,10 +11,12 @@ def permute_array(perm, A):
             temp = perm[next]
             perm[next] -= len(perm)
             next = temp
+            print(A,perm)
+            #restore perm
     #for j in range(len(perm)):
         #perm[j] += len(perm)
     return A, perm
 
 A=['a','b','c','d']
-perm=[3,1,2,0]
+perm=[3,2,1,0]
 print(permute_array(perm, A))
