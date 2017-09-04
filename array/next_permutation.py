@@ -15,7 +15,8 @@ def next_permutation(perm):
         if perm[i] > perm[inversion_point]:
             perm[inversion_point], perm[i]=perm[i], perm[inversion_point]
             break
-            #exchange with the larger value in the furthest right as possible
+            #exchange with the larger value (compared to inversion_point)
+            #in the furthest right as possible
             #to the inversion_point
 
 #entries in perm must appear in decreasing order after inversion_point
