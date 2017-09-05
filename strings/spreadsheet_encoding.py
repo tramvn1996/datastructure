@@ -10,3 +10,4 @@ def spreadsheet_encoding(column_name):
         print(result)
     return result
 print(spreadsheet_encoding('AAA'))
+  
