@@ -25,3 +25,8 @@ def has_cycle(head):
                 cycle_iter=cycle_iter.next
             return it #start of the cycle_iter
     return None #no cycle detected
+# Let F be the number of nodes to the start of the cycle
+# C -the number of nodes on the cycle
+# n - total number of nodes
+#time_complexity is O(F)+O(C)
+#plus O(C) when the slower one enters the cycle
