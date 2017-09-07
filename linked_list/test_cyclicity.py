@@ -30,3 +30,17 @@ def has_cycle(head):
 # n - total number of nodes
 #time_complexity is O(F)+O(C)
 #plus O(C) when the slower one enters the cycle
+
+#Another method without calculating the length
+def has_cycle2(head):
+    fast = slow = head
+    while fast and fast.next and fast.next.next:
+        slow, fast = slow.next , fast.next.next
+        if slow is fast:
+            slow = head
+            while slow is not fast:
+                slow = slow.next
+                fast=fast.next
+            return slow
+
+    return None
