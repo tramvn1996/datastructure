@@ -18,3 +18,4 @@ class ListNode:
     L1=(1,2)
     L2=(2,3)
     print(merge_two_sorted_list(L1, L2))
+#time is O(m+n) and space is O(1) since we reuse the existing nodes
