@@ -17,4 +17,5 @@ def overlapping(L1, L2):
         L1=L1.next
         L2=L2.next
     return L1
-    
+
+#time complexity is O(n) and space complexity is O(1)
