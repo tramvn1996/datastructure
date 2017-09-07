@@ -45,10 +45,9 @@ def overlapping_lists(L1, L2):
         root1, root2 = root2, root1
     for _ in range(abs(stem2_length- stem1_length)):
         L2=L2.next
-    while L1 is not L2 and L1 is not root1 and L2 is not root2:
+    while (L1 is not L2) and (L1 is not root1) and (L2 is not root2):
         L1, L2 = L1.next, L2.next
 
     #if L1==L2 before reaching root1, then it means they overlap before cycle
     #otherwise, we can return any node on the cycle
     return L1 if L1 is L2 else root1
-    
