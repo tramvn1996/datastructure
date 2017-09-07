@@ -1,7 +1,7 @@
 #test if 2 linked list cycle-free have any overlapping
 #start with the longer list first and run to the node that
 #leave the length of the shorter list, then increment until tail
-def overlapping(L1, L2):
+def overlapping_with_no_cycle(L1, L2):
     def length(L):
         length = 0
         while L:
