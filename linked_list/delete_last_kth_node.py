@@ -14,4 +14,6 @@ def remove_kth_last(L,k):
         first, second = first.next, second.next
     second.next = second.next.next
     return dummy_head.next
-    
+
+#time complexity is O(n) - n is the length of the list
+#space is O(1)
