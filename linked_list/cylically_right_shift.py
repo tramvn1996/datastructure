@@ -27,8 +27,10 @@ def cyclically_shift(L,k):
         new_tail = new_tail.next
         #this cycle will iterate until it finds the new head
         #and then break the cycle to have a new list
-        
+
 
     new_head = new_tail.next
     new_tail.next = None
     return new_head
+
+#time complexity is O(n) and space is O(1)
