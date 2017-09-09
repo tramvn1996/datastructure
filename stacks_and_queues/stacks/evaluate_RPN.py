@@ -32,3 +32,4 @@ def evaluate(RPN_expression):
     return intermediate_result[-1]
 
 print(evaluate('2,3,x,2,/'))
+#time O(n) where n is the length of the string, space O(1)
