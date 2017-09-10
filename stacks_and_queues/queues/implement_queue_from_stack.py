@@ -7,7 +7,7 @@ class Queue:
         self._enq.append(x)
 
 
-        #transfer all the element into another stack to get the bottom element out
+    #transfer all the element into another stack to get the bottom element out
 
     def dequeue(self, x):
         if not self._deq:
@@ -18,5 +18,5 @@ class Queue:
         if not self._deq: #deq still empty'
             raise IndexError("empty queue")
         return self._deq.pop()
-
-        
+#maintain 2 stacks, one is for enq and theother for deq,
+#when the deq stack runs out, then transfer the enq stack over and start over again
