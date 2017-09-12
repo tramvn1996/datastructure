@@ -16,7 +16,7 @@ def find_kth_largest(k,A):
             new_pivot_index = left
             A[pivot_id],A[right]=A[right], A[pivot_id]
             for i in range(left, right):
-                if A[i]<pivot_value:
+                if comp(A[i],pivot_value): #operator.gt (x, y)-> if x >y
                     A[i],A[new_pivot_index]=A[new_pivot_index],A[i]
                     new_pivot_index += 1
 
@@ -36,3 +36,5 @@ def find_kth_largest(k,A):
                 right=new_pivot_index -1
 
     return find_kth(operator.gt)
+A=[1,2,3,4,5,6,7]
+print(find_kth_largest(3, A))
