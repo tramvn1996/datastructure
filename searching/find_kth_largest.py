@@ -14,13 +14,14 @@ def find_kth_largest(k,A):
         def partition_around_pivot(left, right, pivot_id):
             pivot_value = A[pivot_id]
             new_pivot_index = left
-            A[pivot_id],A[right]=A[right], A[pivot_id]
+            A[pivot_id],A[right]=A[right], A[pivot_id] #put the pivot_value to the last index
             for i in range(left, right):
                 if comp(A[i],pivot_value): #operator.gt (x, y)-> if x >y
                     A[i],A[new_pivot_index]=A[new_pivot_index],A[i]
                     new_pivot_index += 1
 
-            A[right],A[new_pivot_index] = A[new_pivot_index], A[right]
+            A[right],A[new_pivot_index] = A[new_pivot_index], A[right] #put the pivot_value back in the middle
+            
             return new_pivot_index
 
         left, right = 0, len(A)-1
