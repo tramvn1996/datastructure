@@ -5,6 +5,6 @@
 import collections
 
 def can_string_be_a_palindrome(s):
-    return sum(v%2 for v in collections.Counter(s).value()) <= 1
+    return sum(v%2 for v in collections.Counter(s).values()) <= 1
 #time O(n) n-length of the string
 #space O(c) c-> number of distinct character in the string
