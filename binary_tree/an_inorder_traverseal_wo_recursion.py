@@ -1,4 +1,5 @@
 #inorder traversal without recursion
+#using stack s
 #traverse the left subtree -> visit root -> traverse right subtree
 
 def bst_in_sorted_order(tree):
