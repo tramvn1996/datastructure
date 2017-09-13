@@ -22,4 +22,3 @@ def python_is_letter_constructible(letter_text, magazine_text):
 
     #second approach takes advantage of the subtract operation for Counter
     #space O(L)-> number of distinct character in the letter_text
-    
