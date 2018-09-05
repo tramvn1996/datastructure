@@ -11,7 +11,7 @@ def reverse_words(s):
 
     start = 0
     while True:
-        end=s.find(b'',start)
+        end=s.find('',start)
         if end < 0:
             break
 
@@ -20,3 +20,5 @@ def reverse_words(s):
     reverse_range(s, smart, len(s)-1)
 
 print(reverse_words('Bi ba bi bo'))
+#string.find(s, sub[, start[, end]])
+#Return the lowest index in s where the substring sub is found such that sub is wholly contained in s[start:end]. Return -1 on failure. Defaults for start and end and interpretation of negative values is the same as for slices.

@@ -1,4 +1,4 @@
-#a program that return prime numbers in a certain range
+   #a program that return prime numbers in a certain range
 def generate_prime(n):
     primes = []
     is_prime = [False, False] + [True]*(n-1)
